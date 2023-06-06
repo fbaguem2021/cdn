@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && uglifyjs-folder dist -eo dist"
+    "build": "tsc && uglifyjs-folder dist -eo dist && html-minifier -c html-min.config.json index.html -o dist/index.min.html",
+    "min:html": "html-minifier -c html-min.config.json index.html -o dist/index.min.html"
   },
   "keywords": [],
   "author": "",

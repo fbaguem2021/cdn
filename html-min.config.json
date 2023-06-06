@@ -1,0 +1,10 @@
+{
+    "collapseWhitespace": true,
+    "removeComments": true,
+    "removeOptionalTags": false,
+    "sortAttributes": true,
+    "sortClassName": true,
+    "useShortDoctype": false,
+    "minifyJS": true,
+    "minifyCSS": true
+}
