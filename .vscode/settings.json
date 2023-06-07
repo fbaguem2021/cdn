@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist/css",
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/dist/css"
+        },
+    ],
+    "liveSassCompile.settings.forceBaseDirectory": "/src/sass",
+}

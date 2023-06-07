@@ -1,0 +1,15 @@
+$colors: ('red': rgb(255,0,0), 'green': rgb(0,255,0), 'blue': rgb(0,0,255));
+$icons: ( "eye": "\f112", "start": "\f12e", "stop": "\f12f" );
+
+:root {
+    @each $name, $value in $colors {
+        --color-#{$name}: #{$value};
+    }
+}
+@each $name, $glyph in $icons {
+    .icon-#{$name}:before {
+        display: inline-block;
+        font-family: "Icon Font";
+        content: $glyph;
+    }
+}

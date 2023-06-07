@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
         "module": "ES2020",
-        "target": "ES6",
-        "strict": true,
+        "target": "ESNext",
         "lib": ["ES2020", "DOM"],
-        "rootDir": "src",
-        "outDir": "dist",
-        "esModuleInterop": true
+        "rootDir": "src/ts",
+        "outDir": "dist/js",
+        "esModuleInterop": true,
+        "strict": true,
     },
     "exclude": [
         "node_modules"
