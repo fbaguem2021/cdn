@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && uglifyjs-folder dist/js -eo dist/js && sass --source-map src/sass:dist/css",
+    "build": "tsc && sass --no-source-map src/sass:dist/css",
     "builf:ts": "tsc",
     "build:sass": "sass --source-map -s compressed src/sass:dist/css && html-minifier -c html-min.config.json --input.dir src/sass --output-dir src/sass",
 
