@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.jnirella.com/librarys/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <script src="https://www.jnirella.com/librarys/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/utilities.js"></script>
+    <script type="module" src="js/video/index.js"></script>
+    <link rel="stylesheet" href="css/video/main.css">
+    <title>Video player</title>
+</head>
+<body>
+    <!-- <button id="">Activar video</button> -->
+    <!-- <div class="bloque"></div> -->
+    <div id="videoContent" class="col-md-4 floating-video">
+        <!-- <video id="videoBroggi" src="https://www.jnirella.com/media/Video.webm" controls="" width="100%"></video> -->
+        <video id="mi-video" playsinline controls width="100%">
+            <source src="assets/cancion.mp4" type="video/mp4"/>
+        </video>
+        <div class="video-buttons">
+            <button class="btn btn-small btn-secondary" data-video-moment="0">0</button>
+            <button class="btn btn-small btn-secondary" data-video-moment="1">1</button>
+            <button class="btn btn-small btn-secondary" data-video-moment="2">2</button>
+            <button class="btn btn-small btn-secondary" data-video-moment="3">3</button>
+            <button class="btn btn-small btn-secondary" data-video-moment="4">4</button>
+            <button class="btn btn-small btn-secondary" data-video-moment="5">5</button>
+        </div>
+    </div>
+</body>
+</html>

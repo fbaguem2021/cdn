@@ -1,0 +1,15 @@
+$vid-buttons-container-width: 100%;
+#mi-video {
+    top: 0;
+    border: 1px solid lightgray;
+    opacity: 1;
+    transform: translateY(-85%);
+}
+.video-buttons {
+    width: $vid-buttons-container-width;
+    display: flex;
+    justify-content: center;
+}
+.video-buttons > button {
+    margin: 0 2px;
+}
