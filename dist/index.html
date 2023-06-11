@@ -14,18 +14,22 @@
 <body>
     <!-- <button id="">Activar video</button> -->
     <!-- <div class="bloque"></div> -->
-    <div id="videoContent" class="col-md-4 floating-video">
-        <!-- <video id="videoBroggi" src="https://www.jnirella.com/media/Video.webm" controls="" width="100%"></video> -->
-        <video id="mi-video" playsinline controls width="100%">
-            <source src="assets/cancion.mp4" type="video/mp4"/>
-        </video>
-        <div class="video-buttons">
-            <button class="btn btn-small btn-secondary" data-video-moment="0">0</button>
-            <button class="btn btn-small btn-secondary" data-video-moment="1">1</button>
-            <button class="btn btn-small btn-secondary" data-video-moment="2">2</button>
-            <button class="btn btn-small btn-secondary" data-video-moment="3">3</button>
-            <button class="btn btn-small btn-secondary" data-video-moment="4">4</button>
-            <button class="btn btn-small btn-secondary" data-video-moment="5">5</button>
+    <div class="video-modal floating">
+        <span class="modal-background"></span>
+        <div class="video-content col-md-4">
+            <!-- <video id="videoBroggi" src="https://www.jnirella.com/media/Video.webm" controls="" width="100%"></video> -->
+            <video id="mi-video" playsinline controls class="move-up not">
+                <!-- <source src="assets/cancion.mp4" type="video/mp4"/> -->
+                <source src="https://www.jnirella.com/media/Video.webm" type="video/webm"/>
+            </video>
+            <div class="video-buttons">
+                <button class="btn btn-small btn-secondary" data-video-moment="0"><i class="bi bi-custom"></i> Presentación</button>
+                <button class="btn btn-small btn-secondary" data-video-moment="1"><i class="bi bi-custom"></i> Ciclos estudiados</button>
+                <button class="btn btn-small btn-secondary" data-video-moment="2"><i class="bi bi-custom"></i> </button>
+                <button class="btn btn-small btn-secondary" data-video-moment="3"><i class="bi bi-custom"></i> </button>
+                <button class="btn btn-small btn-secondary" data-video-moment="4"><i class="bi bi-custom"></i> </button>
+                <button class="btn btn-small btn-secondary" data-video-moment="5"><i class="bi bi-custom"></i> </button>
+            </div>
         </div>
     </div>
 </body>

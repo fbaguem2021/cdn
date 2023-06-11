@@ -6,15 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && sass --no-source-map src/sass:dist/css",
-    "builf:ts": "tsc",
-    "build:sass": "sass --source-map -s compressed src/sass:dist/css && html-minifier -c html-min.config.json --input.dir src/sass --output-dir src/sass",
-
+    "build:ts": "tsc",
+    "build:sass": "sass --no-source-map -s compressed src/sass:dist/css && html-minifier -c html-min.config.json --input-dir dist/css --output-dir css/css",
+    "watch:ts":"tsc -w",
+    "watch:sass":"sass -w --no-source-map src/sass:dist/css",
+    "watch:sass-video":"sass -w --no-source-map src/sass/video:dist/css/video",
     "min:html": "html-minifier -c html-min.config.json index.html -o dist/index.min.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^5.1.3"
+    "html-minifier": "^4.0.0",
+    "sass": "^1.63.2",
+    "typescript": "^5.1.3",
+    "uglifyjs-folder": "^3.2.0"
+  },
+  "optionalDependencies": {
+    "node-sass": "^9.0.0"
   }
 }

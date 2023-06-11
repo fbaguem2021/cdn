@@ -2,6 +2,8 @@ export class Video {
     video: HTMLVideoElement;
     static create(q:string) {
         const video = $(q)
+            console.log(video)
+            console.log(Object.getPrototypeOf(video))
         if ( video && video instanceof HTMLVideoElement ) {
             return new Video(video)
         } else {
