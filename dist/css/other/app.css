@@ -1,0 +1,23 @@
+:root {
+  --color-red: rgb(255, 0, 0);
+  --color-green: rgb(0, 255, 0);
+  --color-blue: rgb(0, 0, 255);
+}
+
+.icon-eye:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "\f112";
+}
+
+.icon-start:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "\f12e";
+}
+
+.icon-stop:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "\f12f";
+}

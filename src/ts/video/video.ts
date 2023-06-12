@@ -43,4 +43,7 @@ export class Video {
         this.video.currentTime = moments[identifyer];
         this.video.play()
     }
+    public toString(): HTMLVideoElement {
+        return this.video
+    }
 }
